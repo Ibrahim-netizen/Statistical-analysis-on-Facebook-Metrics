@@ -1,5 +1,5 @@
 #Importing Facebook dataset
-Facebook_data <- read.csv("C:/LearningR/dataset_Facebook.csv", header = TRUE)
+dataset_Facebook <- read.csv("C:/LearningR/dataset_Facebook.csv", header = TRUE)
 View(dataset_Facebook)
 
 #Data statistics
@@ -52,5 +52,7 @@ sig2 <- RSS / Regression$df.residual
 
 #Statistically, MSE is the maximum likelihood estimator of residual variance, but is biased (downward). The Pearson one is the restricted maximum likelihood estimator of residual variance, which is unbiased.
 
+#perform Shapiro-wilk test for normality
+shapiro.test(complete_data$Lifetime.Engaged.Users) 
 
-
+shapiro.test(complete_data$Lifetime.Post.Consumers)
