@@ -50,7 +50,6 @@ RMSE <- sqrt(MSE)
 #Pearson estimated residual variance
 sig2 <- RSS / Regression$df.residual
 
-#Statistically, MSE is the maximum likelihood estimator of residual variance, but is biased (downward). The Pearson one is the restricted maximum likelihood estimator of residual variance, which is unbiased.
 
 #perform Shapiro-wilk test for normality
 shapiro.test(complete_data$Lifetime.Engaged.Users) 
