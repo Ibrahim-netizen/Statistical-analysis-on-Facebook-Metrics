@@ -1,0 +1,56 @@
+#Importing Facebook dataset
+Facebook_data <- read.csv("C:/LearningR/dataset_Facebook.csv", header = TRUE)
+View(dataset_Facebook)
+
+#Data statistics
+summary(dataset_Facebook)
+
+#Removing empty rows
+complete_data <- dataset_Facebook[complete.cases(dataset_Facebook), ]
+summary(complete_data)
+
+#plotting scatterplot matrix on attributes of posts posted on Facebook
+pairs(Lifetime.Engaged.Users ~ Page.total.likes + Category + Post.Month + Post.Weekday + Post.Hour + Paid, data = complete_data, main = "Scatterplot Matrix of Post Features excluding Type", col = "steelblue")
+Regression <- lm(formula = Lifetime.Engaged.Users ~ Page.total.likes + Category + Post.Month + Post.Weekday + Post.Hour + Paid, data = complete_data)
+summary(Regression)
+
+#plotting regression line
+plot(Regression)
+
+#Analysis of variance
+anova(Regression)
+summary(aov(Regression))
+
+#fitiing a linear regression
+Regression <- lm(formula = Lifetime.Engaged.Users ~ Page.total.likes + Category + Post.Month + Post.Weekday + Post.Hour + Paid, data = complete_data)
+summary(Regression)
+
+#plotting regression line showing the residues vs fitted, standardized residues, sqrt standardized residues, and residuals vs leverage
+#residual = observed values minus the predicted values
+plot(Regression)
+summary(Regression$R.squared)
+
+#Analysis of variance
+anova(Regression)
+
+#degrees of freedom
+df.residual(Regression)
+
+length(coefficients(Regression))
+
+#Residual sum of squares
+RSS <- c(crossprod(Regression$residuals))
+
+#Mean squared error
+MSE <- RSS / length(Regression$residuals)
+
+#Root Mean squared error
+RMSE <- sqrt(MSE)
+
+#Pearson estimated residual variance
+sig2 <- RSS / Regression$df.residual
+
+#Statistically, MSE is the maximum likelihood estimator of residual variance, but is biased (downward). The Pearson one is the restricted maximum likelihood estimator of residual variance, which is unbiased.
+
+
+
