@@ -8,7 +8,7 @@ Upon the proliferation of the internet and the world as we know it becoming digi
 Linear regression analysis is incorporated to model how user engagement on the Facebook page of a renowned cosmetic brand can improve the brand's online presence and boost revenue. With this the Cosmetic brand is able to determine what type of post received more engagement whether it is a photo, link, status or video, paid for or not, created by action, product and inspiration and what day of the week, month and time the post was 
 made.
 
-              ![image](https://user-images.githubusercontent.com/76513466/137328361-d0205575-bf8c-4494-97c4-23b641a55635.png)
+![image](https://user-images.githubusercontent.com/76513466/137328361-d0205575-bf8c-4494-97c4-23b641a55635.png)
 
 ### Facebook Metrics
 The dataset comprises of 7 independent variables namely: Post Type classified into photo, link, status and video,Category based on the type of campaign performed by this specific cosmetic brand created by action (1), product (2) and inspiration (3), Weekday, Month, hour, Paid and Page total likes as well as 12 continuous output variables of the 500 posts made on the Facebook page of the cosmetic brand. 
