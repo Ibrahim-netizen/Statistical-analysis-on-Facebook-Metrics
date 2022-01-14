@@ -52,7 +52,7 @@ Thus, the Residual vs Fitted plot is an ideal residual plot showing high predict
 ### The Residual Plot
 ![Rplot02](https://user-images.githubusercontent.com/76513466/137340256-91338a5d-b690-40eb-bc72-425bf6c10d87.png)
 
-In order to determine normality graphically, we can use the output of a normal Q-Q Plot. If the data are normally distributed, the data points will be close to the diagonal line. If the data points stray from the line in an obvious non-linear fashion, the data are not normally distributed. As we can see from the normal Q-Q plot below, the data is normally distributed.
+In order to determine normality graphically, we can use the output of a normal Q-Q Plot. If the data are normally distributed, the data points will be close to the diagonal line. If the data points stray from the line in an obvious non-linear fashion, the data are not normally distributed. As we can see from the normal Q-Q plot above, the data is normally distributed.
 
 ![Rplot03](https://user-images.githubusercontent.com/76513466/137340682-5887fc0b-502d-4611-9463-411cad0f8d36.png)
 
